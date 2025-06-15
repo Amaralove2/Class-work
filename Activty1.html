@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CSS Box Model Example</title>
-    <style type="text/css">
-        .example1 {
-            width: 220px;
-            background-color: yellow;
-            /* top right bottom left */
-            padding: 0px 10px 20px 40px;
-            border: 0px;
-            margin: 0px;
+    <title>Cards</title>
+    <meta charset="utf-8">
 
-            float: left;
-        }
-        .example2 {
-            width: 220px;
-            background-color: green;
-            padding: 80px;
-            border: 5px solid black;
-            margin:60px 60px;
-        }
-    </style>
-    </head
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+</head>
+
 <body>
-    <h1> Box Model Example </h1>
-    <hr>
-    <p class="example1">My Content Example 1</p>
+    <div class="container mt-3">
+        <h2>Cards</h2>
 
-    <p class="example2">My Content Example 2</p>
 
-    </body>
-    </html>
+
+        <div class="card" style="width:  18rem;">
+            <img class="card-img-top"
+            src="c:\Users\pc\Downloads\Bootstrap-4-Cards.webp"
+            alt="Card image">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Passionate about Programming</p>
+
+                <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
