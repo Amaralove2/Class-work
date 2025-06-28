@@ -1,17 +1,17 @@
-<!DOCTYPE  html>
+<!DOCTYPE html>
 <html>
-
+    <head>
+    </head>
     <body>
-
-        <h1 id="myH"></h1>
-        <p id="myP"></p>
-
+        <button onclick="myfunction(5)">Execute JS function</button>
+        
         <script>
-            // my heading:
-            document.getElementById("myH").innerHTML = "JavaScript";
-            // my paragraph:
-            document.getElementById("myP").innerHTML = "My first paragraph.";
-            
+            function myfunction(x, y) {
+                if (y === undefined) {
+                    y = 2;
+                }
+                document.write(x*y);
+            }
         </script>
     </body>
 </html>
