@@ -1,43 +1,22 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-<head>
+<html>
+    <body>
+        <h2>JavaScript String Methods</h2>
+        <p>Basic Methods</p>
+        <script>
+            var str = "AmAzInG";
+            document.write(str.toUpperCase());
+            document.write("<br>");
+            document.write(str.toLowerCase());
+            document.write("<br>");
+            document.write(str.startsWith("i"));
+            document.write("<br>");
 
-    <title>Bootstrap Jumbotron</title>
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
-
-    </script>
-
-</head>
-
-<body style="text-align: center;">
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 style="color:orange;">Codingal
-            </h1>
-
-
-
-            <p>Codingal is a platform that helps children learn coding through fun and engaging activities.</p> We aim to make coding accessible and enjoyable for kids of all ages.</p> We offer a wide range of coding courses, workshops, and resources designed to inspire creativity and problem-solving skills in young learners.</p> Our mission is to empower the next generation of innovators and thinkers by providing them with the tools and knowledge they need to succeed in the digital world.</p> Making kids fall in love with coding.</p>
-        </div>
-    </div>
-
-    <div class="container mt-3">
-
-        <h2>Buttons</h2>
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-    </div>
-
+            // Test Method -> returns true or false
+            var str1 ="I learnt about Methds in JavaScript";
+            var patt = new RegExp("about");
+            var res = patt.test(str);
+            document.write(res);
+        </script>
     </body>
-
-    </html>
-    
+</html>
