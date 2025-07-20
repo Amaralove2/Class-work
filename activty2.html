@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html>
-<body>
-    <p>Click the button to get a time-based greeting:</p>
-    <button onclick="myFunction()">Try it</button>
-    <p id="greet"></p>
-    <p id="hour"></p>
-    <script> 
-        function myFunction() {
-            var time = new Date().getHours();
-            var greeting;
+    <p>Multiply every element in the arr with 10</p>
+        <p id="product_value"></p>
+    <script>
+        var numbers = [28, 6,57,49,12, 3, 4, 5];
+        function myFunction(num) {
 
-            if (time < 10) {
-                greeting = "Good morning!";
-            } else if (time < 20) {
-                greeting = "Good day!";
-            } else {
-                greeting = "Good evening!";
+                return num * 10;
+
             }
 
-            document.getElementById("greet").innerHTML = greeting;
-            document.getElementById("hour").innerHTML = "Current hour: " + time;
-        }
-    </script>
+            var newarray = numbers.map(myFunction);
+
+            document.getElementById("product_value").innerHTML =
+
+                newarray;
+
+        </script>
+
 </body>
 </html>
