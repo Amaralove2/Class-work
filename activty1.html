@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h2>JavaScript Class</h2>
-        <p>How to use a JavaScript class</p>
-        <p id="student1"></p>
-        <p id="student2"></p>
-        <script>
-            class Student {
-                constructor(name, year) {
-                    this.name = name;
-                    this.year = year;
-                } 
-            age() {
-                 let date = new Date();
-                 return date.getFullYear() - this.year;
-            }
-        }
 
-        const student1 = new Student("Riya", 2014)
+<body>
 
-        document.getElementById("student1").innerHTML = 
-        "My name is " + student1.name + ". I born in " + student1.year + ".And my age is " + student1.age() + ".";
+    <h2>The JavaScript String() Method</h2>
 
-        student2 = new Student("Tina", 2018)
-        document.getElementById("student2").innerHTML = 
-        "My name is " + student2.name + ". I born in " + student2.year + ".And my age is " + student2.age() + ".";
+    <p>The String() method can convert a number to a string.</p>
 
-        </script>
+    <p id="number_result"></p>
+    <p id="string_result"></p>
+
+    <script>
+        var x = 70;
+        var y = 90;
+        document.getElementById("number_result").innerHTML = x + y;
+        document.getElementById("string_result").innerHTML = String(x) + String(y); // Does not add because it is a string it concatenates
+    </script>
+    
     </body>
-</html>
+    
+    </html>
